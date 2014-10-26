@@ -1,21 +1,10 @@
 Getting-and-Cleaning-Data-Course-Project
 ========================================
 
-###This is a repo for code and documentation written for the Getting and Cleaning Data Course Project 
-##Course Project
-###Documents include:
-*	Readme.md
-*	CodeBook.md
-*	run_analysis.R script
-*	a txt file created with write.table() called - "data_with_averages.txt"
-Directions
-*	Unzip the source (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) into a folder on your local drive, say C:/Coursera/UCI Har Dataset/
-*	Put run_analysis.R into C:/Cousera/UCI HAR Dataset/
-*	In RStudio: setwd("C:/Cousera/UCI HAR Dataset/”), 
-*	In RSTudio: load the following libraries: httr, plyr, rcurl, tidyr
-*	IN RStudio: source("run_analysis.R")
-*	Use data <- read.table("tidy_data_with_averages.txt", header=TRUE) to read the data. There are 30 subjects and 6 activities giving you 30 *6 =180 rows. 
+###Github repo: https://github.com/SapnaJainDS/Getting-and-Cleaning-Data-Course-Project
 
+### R script name: run_analysis.R
+ 
 ##Instructions:
 1. Download the data from the original data set location above, unzip to your hard drive in a directory c:/coursera/UCI HAR Dataset 
 2. Load these libraries into R: httr, plyr, rcurl, tidyr 
@@ -54,5 +43,19 @@ The script then merges all the data into a final data set that is saved as tidy_
 tidy_data_with_averages.txt subject activity tbodyacc-mean-x tbodyacc-mean-y tbodyacc-mean-z tbodyacc-std-x I did not replace these headers for 2 reasons - 1) they do not violate the instructors rules for headers since they do not contain space, dots, underscores, or parethesis and 2) the source data did not give translations beyond the text provided. While it might be possible to translate this text from google searches this seemed beyond the scope of this class.
 The text file is not pretty to the human eye. To see pretty data set a variable equal to the text file in R using a statement like:
 data <- read.table("tidy_data_with_averages.txt", header=TRUE)
+
+##Course Project
+###Documents include:
+*	Readme.md
+*	CodeBook.md
+*	run_analysis.R script
+*	a txt file created with write.table() called - "data_with_averages.txt"
+Directions
+*	Unzip the source (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) into a folder on your local drive, say C:/Coursera/UCI Har Dataset/
+*	Put run_analysis.R into C:/Cousera/UCI HAR Dataset/
+*	In RStudio: setwd("C:/Cousera/UCI HAR Dataset/”), 
+*	In RSTudio: load the following libraries: httr, plyr, rcurl, tidyr
+*	IN RStudio: source("run_analysis.R")
+*	Use data <- read.table("tidy_data_with_averages.txt", header=TRUE) to read the data. There are 30 subjects and 6 activities giving you 30 *6 =180 rows. 
 
 
